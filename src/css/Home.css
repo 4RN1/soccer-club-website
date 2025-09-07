@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.landing-page {
+  height: 100vh;
+  background: 
+    url(../assets/landing.jpg) center/cover no-repeat,
+    rgba(0, 0, 0, 0.4); /* dark overlay */
+  background-blend-mode: darken; /* blends overlay with image */
+  color: white;
+  
+  }
+
+  .landing-image {
+   
+    width: 80rem;
+    height: 80rem;
+    border-bottom: 10px solid;
+    border-radius: 10%;
+    border-color: rgb(53, 221, 90);
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .heading {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+ 
+
+.image-wrapper {
+  height: 100%;
+}
+
+.landing-page h1 {
+  font-size: 7rem;
+  outline: 2px solid;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.subtext-background ul {
+  font-size: 2rem;
+  width: 48rem;
+  line-height: 3.2rem; 
+  word-spacing: 0.1.5rem;
+  list-style-type: '- ';
+  list-style: '- ';
+}
+
+.subtext-background {
+background-color: rgb(80, 76, 76);
+color: rgb(255, 255, 255);
+border-radius: 1.5rem;
+padding: 3rem;
+text-align: start;
+margin-bottom: 2rem;
+}
+
+ .to-registration {
+    width:25rem;
+    height: 10rem;
+    font-size: 2.5rem;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+    background-color: rgb(16, 170, 88);
+    color: rgb(233, 233, 233);
+    cursor: pointer;
+    
+  }
+
+
+.to-registration:hover {
+  background-color: rgb(238, 250, 65);
+  color: black;
+  transition: 0.2s ease;
+}
+
+.win {
+  color: rgb(251, 255, 0);
+  font-weight: 700;
+
+}

@@ -1,0 +1,45 @@
+
+
+html {
+  font-size: 10px;
+}
+
+.navbar {
+font-family: "Noto Sans Georgian", sans-serif;
+font-weight:700; 
+  width: 100%;
+  font-size: 2.2rem;
+  color: #FFFFFF;
+  display: flex;
+  height: 8rem;
+  align-items: center;
+  
+ 
+
+}
+
+.navbar ul {
+  width: 100%;
+  display: flex;
+   justify-content: center;
+   
+  list-style: none;
+  gap: 5rem;
+}
+
+.navbar li {
+
+  display: flex;
+  cursor: pointer;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  
+}
+
+.navbar li:hover {
+  background-color: rgb(141, 230, 90);
+  color: black;
+  transition:0.2s ease;
+
+  
+}
