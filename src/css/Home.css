@@ -15,6 +15,7 @@ html {
     rgba(0, 0, 0, 0.4); /* dark overlay */
   background-blend-mode: darken; /* blends overlay with image */
   color: white;
+
   
   }
 
@@ -30,6 +31,7 @@ html {
   .wrapper {
     display: flex;
     justify-content: space-around;
+    margin-top: 2rem;
   }
 
   .heading {
@@ -98,4 +100,19 @@ margin-bottom: 2rem;
   color: rgb(251, 255, 0);
   font-weight: 700;
 
+}
+
+
+
+
+.wrapper {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1s ease, transform 1s ease;
+  margin: 10px 0;
+}
+
+.wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
 }

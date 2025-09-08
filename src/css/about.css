@@ -1,0 +1,17 @@
+
+body {
+  background-color: rgb(77, 76, 76);
+}
+
+.about-head {
+  display: grid;
+  height: 100vh;
+  
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-heading {
+  background: url(../assets/wallpaper-about.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,13 +1,21 @@
+import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 
 import "../css/Home.css";
 
 function Home() {
+
+const [show, setShow] = useState(false)
+
+useEffect(()=> {
+  setShow(true)
+}, [])
+
   return (
     <div>
-      <div className="landing-page">
+      <div className ="landing-page">
         <Navbar />
-        <div className="wrapper">
+        <div className={`wrapper ${show ? " show" : ""}`}>
           <div className="heading">
             <h1>თამაშის დროა!</h1>
             <div className="subtext-background">
