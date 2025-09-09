@@ -1,0 +1,32 @@
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.accordion-question {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  background: #b6f785;
+  border-radius: 0.5rem;
+  transition: background 0.2s ease;
+  font-size: 2rem;
+}
+
+.accordion-question:hover {
+  background: #e0e0e0;
+}
+
+.accordion-answer {
+  padding: 1rem;
+  background: #fff;
+  animation: fadeIn 0.3s ease;
+  font-size: 2rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

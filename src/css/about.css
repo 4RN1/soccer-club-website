@@ -1,17 +1,90 @@
 
 body {
-  background-color: rgb(77, 76, 76);
+  background-color: rgb(255, 255, 255);
 }
 
-.about-head {
-  display: grid;
-  height: 100vh;
-  
-  grid-template-columns: repeat(2, 1fr);
-}
+
 
 .about-heading {
-  background: url(../assets/wallpaper-about.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+ background: 
+    url(../assets/michal-balog-MRgJfWsmjnM-unsplash.jpg) center/cover no-repeat,
+    rgba(0, 0, 0, 0.2); /* dark overlay */
+  background-blend-mode: darken; /* blends overlay with image */
+  color: white;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+
+}
+
+.about-text {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-heading h1 {
+  font-size: 6rem;
+  color: aliceblue;
+  margin-left: 5rem;
+  margin-bottom: 4rem;
+  border: 1px solid;
+  padding: 3rem;
+  border-radius: 2rem;
+  display:inline;
+}
+
+.about-wrapper {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+
+  max-width: 150rem;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.about-text {
+  font-size: 2rem;
+  margin: 2rem auto;  
+  color: rgb(0, 0, 0);
+  border: 2px solid;
+  border-radius: 2rem;
+  padding: 2rem;
+  line-height: 3.5rem;
+  max-width: 140rem;   
+}
+
+.faq h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 0 2rem 0;
+  color: rgb(0, 0, 0);
+}
+
+.faq {
+  width: 100%;
+  max-width: 140rem;
+  margin: 5rem auto;
+}
+
+.about-wrapper {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1s ease, transform 1s ease;
+  
+}
+
+.about-wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media screen and (max-width:700px){
+  .about-heading h1{
+    margin: 0;
+  }
 }

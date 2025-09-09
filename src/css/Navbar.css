@@ -2,28 +2,33 @@ html {
   font-size: 10px;
 }
 
-
 .navbar {
   font-family: "Noto Sans Georgian", sans-serif;
   width: 100%;
   font-size: 2.2rem;
   color: #ffffff;
   display: flex;
-
   height: 8rem;
   align-items: center;
   background-color: rgb(88, 88, 88);
- 
-  
+  justify-content: center; /* keep content centered */
 }
 
 .navbar ul {
-  width: 100%;
   display: flex;
   justify-content: center;
-
   list-style: none;
   gap: 5rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 2s ease, transform 2s ease;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar.show ul {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .navbar li {
@@ -31,26 +36,12 @@ html {
   cursor: pointer;
   padding: 1.2rem;
   border-radius: 1rem;
-  
 }
 
 .navbar li:hover {
   background-color: rgb(141, 230, 90);
   color: black;
   transition: 0.2s ease;
-  
-}
-
-.navbar ul {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 2s ease, transform 2s ease;
-  margin: 10px 0;
-}
-
-.navbar.show ul {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .navbar ul li a {
@@ -65,7 +56,37 @@ html {
   line-height: 1.2;     
 }
 
-
 .navbar ul li:hover a {
   color: black;         
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+@media (max-width: 900px) {
+.navbar{
+  height: 36rem;
+  width: 100%;
+
+}
+
+  .navbar ul {
+    flex-direction: column; /* stack menu items vertically */
+    gap: 1.5rem;           /* reduce spacing for small screens */
+    align-items: center;
+    
+  }
+
+  .navbar li {
+    width: 100%;
+    justify-content: center; /* center text inside li */
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    font-size: 2rem;
+  }
+  .navbar ul {
+    gap: 1rem;
+  }
 }

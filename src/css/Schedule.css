@@ -1,0 +1,52 @@
+.schedule-item {
+  max-width: 25rem;
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: rgb(51, 50, 50);
+  color: #FFF;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+  margin-top: 4rem;
+  
+}
+
+.schedule-heading  {
+
+background: url(../assets/schedule.jpg)center/cover no-repeat,
+    rgba(0, 0, 0, 0.4); /* dark overlay */
+  background-blend-mode: darken; /* blends overlay with image */
+  color: white;
+height: 50vh;
+display: flex;
+align-items: center;
+
+  justify-content: flex-start;
+}
+.schedule-heading h1 {
+  outline: 2px solid;
+  display: inline;
+  border: 2rem;
+  margin-left: 20rem;
+  font-size: 7rem;
+  border-radius: 2rem;
+   padding: 3rem;
+}
+
+.scedule-side {
+  display: flex;
+  gap: 4rem;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.schedule-text {
+  padding: 1.2rem;
+  line-height: 5rem;
+  
+}
+
+hr {
+  width: 25rem;
+}
