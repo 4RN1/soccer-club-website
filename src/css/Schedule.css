@@ -19,6 +19,7 @@ background: url(../assets/schedule.jpg)center/cover no-repeat,
   background-blend-mode: darken; /* blends overlay with image */
   color: white;
 height: 50vh;
+width: 100%;
 display: flex;
 align-items: center;
 
@@ -49,4 +50,24 @@ align-items: center;
 
 hr {
   width: 25rem;
+}
+
+
+@media screen and (max-width:900px) {
+  .schedule-heading {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+
+.schedule-heading h1 {
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.schedule-text{
+padding: 0;
+}
+
 }

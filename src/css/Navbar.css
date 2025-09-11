@@ -18,7 +18,7 @@ html {
   display: flex;
   justify-content: center;
   list-style: none;
-  gap: 5rem;
+  gap: 3rem;
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 2s ease, transform 2s ease;
@@ -62,6 +62,27 @@ html {
 
 /* ------------------ RESPONSIVE ------------------ */
 
+
+
+
+
+
+@media screen and (min-width:901px ) {
+ .navbar li {
+  display: flex;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.navbar ul {
+  gap: 1rem;
+  padding: 0 0.7rem;
+  
+}
+
+}
+
+
 @media (max-width: 900px) {
 .navbar{
   height: 36rem;
@@ -71,7 +92,7 @@ html {
 
   .navbar ul {
     flex-direction: column; /* stack menu items vertically */
-    gap: 1.5rem;           /* reduce spacing for small screens */
+    gap: 1.2rem;           /* reduce spacing for small screens */
     align-items: center;
     
   }

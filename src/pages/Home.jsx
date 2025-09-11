@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
-
+import { Link } from "react-router-dom";
 import "../css/Home.css";
 
 function Home() {
@@ -30,7 +30,9 @@ useEffect(()=> {
            
           
 </div>
-            <button className="to-registration">რეგისტრაცია</button>
+            <Link to="/register" className="to-registration">
+  რეგისტრაცია
+</Link>
           </div>
 
           <div className="image-wrapper">
