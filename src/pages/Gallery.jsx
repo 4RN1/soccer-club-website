@@ -3,11 +3,16 @@ import Navbar from '../components/Navbar'
 import FooterComp from '../components/FooterComp'
 import { useEffect, useState } from 'react'
 import client from '../sanity.Client'
-
+import AOS from "aos";
 function Gallery() {
   const [images, setImages] = useState([])
   const [videos, setVideos] = useState([])
   const [loading, setLoading] = useState(true)
+
+   useEffect(() => {
+      AOS.init({ duration: 1000, once: true }); // once = animate only on first scroll
+    }, []);
+
 
   // Fetch photos
   useEffect(() => {
@@ -49,25 +54,25 @@ useEffect(() => {
     <div className="gallery">
       <Navbar />
     <div className='images'>
-      <h1>გალერეა</h1>
+      <h1 data-aos="fade-up" data-aos-delay="200">გალერეა</h1>
 </div>
       {/* Photos */}
-      <h2 className='photos-heading'>ფოტოები</h2>
+      <h2 className='photos-heading' data-aos="fade-up" data-aos-delay="200">ფოტოები</h2>
       <div className='photos-grid'>
         {images.length > 0 ? images.map(photo => (
-          <div key={photo._id} className='photo-item'>
+          <div key={photo._id} className='photo-item' data-aos="fade-up" data-aos-delay="200">
             <img
               src={photo.image?.asset?.url || '/placeholder.jpg'}
               alt={photo.caption || photo.title || 'Gallery image'}
-             className='gallery-img'/>
+             className='gallery-img' data-aos="fade-up" data-aos-delay="200"/>
             {photo.caption && <p>{photo.caption}</p>}
           </div>
         )) : <p>No images found</p>}
       </div>
 
       {/* Videos */}
-      <h2 className='videos-heading'>ვარჯიშის ვიდეოები</h2>
-      <div className='videos-grid'>
+      <h2 className='videos-heading' data-aos="fade-up" data-aos-delay="200">ვარჯიშის ვიდეოები</h2>
+      <div className='videos-grid' data-aos="fade-up" data-aos-delay="200">
         {videos.map(item => (
   <div key={item._id}>
     {item.video?.length > 0 ? item.video.map((v, idx) => (
@@ -86,7 +91,7 @@ useEffect(() => {
             src={v.embedUrl.replace("watch?v=", "embed/")}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+            allowFullScreen data-aos="fade-up" data-aos-delay="200"
           ></iframe>
         )}
 
