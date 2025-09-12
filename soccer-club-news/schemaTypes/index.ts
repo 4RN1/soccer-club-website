@@ -1,3 +1,4 @@
 import news from "./news"
-
-export const schemaTypes = [news]
+import gallery from "./gallery"
+import videoGallery from "./videoGallery"
+export const schemaTypes = [news , gallery , videoGallery ]

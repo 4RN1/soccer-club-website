@@ -1,11 +1,147 @@
-.gallery {
-  background: url(../assets/Untitled-1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover;
-  height: 100vh;
-}
+
 
 .content {
   height: 100vh;
+}
+
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  text-align: center;
+  font-size: 2rem;
+  gap: 1rem;
+ 
+}
+
+.photos-heading {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.images {
+  background: url(../assets/soccer-player-action-stadium.jpg)
+    rgba(0, 0, 0, 0.4); 
+  background-blend-mode: darken; 
+  color: white;
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+}
+
+.images h1 {
+  font-size: 6rem;
+  outline: 2px solid;
+  display: inline;
+  margin-left: 20rem;
+  padding: 3rem;
+  border-radius: 2rem;
+}
+
+.photos-heading {
+  font-size: 4rem;
+}
+
+.videos-heading {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.gallery-img {
+  width: 100%;
+  max-width: 60rem;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+
+
+
+source {
+  width: 100%;
+  max-width: 50rem;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+.video-item iframe {
+
+  width: 58rem;
+  height: 40rem;
+  border: none;
+  border-radius: 12px; /* optional, makes it look smoother */
+}
+
+
+
+@media screen and (max-width:1700px) {
+  .photos-grid {
+    grid-template-columns: repeat(2 , 1fr);
+  }
+
+.images {
+  height: 100vh;
+}
+.videos-grid {
+  grid-template-columns: repeat(2 , 1fr);
+}
+.video-item iframe {
+
+  width: 55rem;
+  height: 40rem;
+  border: none;
+  border-radius: 12px; /* optional, makes it look smoother */
+}
+
+}
+
+
+@media screen and (max-width:1300px) {
+  .photos-grid {
+    grid-template-columns: repeat(1 , 1fr);
+    justify-content: center;
+  }
+
+.images {
+  height: 100vh;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+  .images h1{
+    margin: 0;
+  }
+
+.videos-grid {
+  grid-template-columns: repeat(1 , 1fr);
+}
+
+}
+
+@media screen and (max-width:600px) { 
+
+
+
+  .images h1 {
+    padding: 1rem;
+    margin: 0;
+  }
+.video-item iframe {
+
+  width: 33rem;
+  height: 25rem;
+  border: none;
+  border-radius: 12px; /* optional, makes it look smoother */
+}
+
+
 }

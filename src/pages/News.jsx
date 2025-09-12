@@ -44,9 +44,7 @@ function News() {
 
      
       {articles.map((article) => {
-        if (!article) {
-          return <div><h2>არარის ინფორმაცია</h2></div>
-        }
+       
         const isExpanded = expanded === article._id
         const previewText = article.body?.[0]?.children?.[0]?.text.slice(0, 100) + '...'
 
