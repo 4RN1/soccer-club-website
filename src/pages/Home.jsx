@@ -30,7 +30,7 @@ useEffect(()=> {
            
           
 </div>
-            <Link to="/register" className="to-registration">
+            <Link to="/registration" className="to-registration">
   რეგისტრაცია
 </Link>
           </div>
