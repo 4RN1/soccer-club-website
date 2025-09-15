@@ -37,7 +37,7 @@ useEffect(()=> {
 
           <div className="image-wrapper">
             <img
-              src="./src/assets/landing-guy.png"
+              src="/guy.png"
               alt="guy"
               className="landing-image"
             />
