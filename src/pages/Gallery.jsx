@@ -7,7 +7,7 @@ import AOS from "aos";
 function Gallery() {
   const [images, setImages] = useState([])
   const [videos, setVideos] = useState([])
-  const [loading, setLoading] = useState(true)
+
 
    useEffect(() => {
       AOS.init({ duration: 1000, once: true }); // once = animate only on first scroll
@@ -24,11 +24,11 @@ function Gallery() {
     }`)
       .then(data => {
         setImages(data)
-        setLoading(false)
+      
       })
       .catch(err => {
         console.error(err)
-        setLoading(false)
+       
       })
   }, [])
 
@@ -48,7 +48,7 @@ useEffect(() => {
 }, [])
 
 
-  if (loading) return <p>Loading gallery...</p>
+
 
   return (
     <div className="gallery">
@@ -67,7 +67,7 @@ useEffect(() => {
              className='gallery-img' data-aos="fade-up" data-aos-delay="200"/>
             {photo.caption && <p>{photo.caption}</p>}
           </div>
-        )) : <p>No images found</p>}
+        )) : <p>სურათების არე ცარიელია</p>}
       </div>
 
       {/* Videos */}
@@ -97,7 +97,7 @@ useEffect(() => {
 
         {v.description && <p>{v.description}</p>}
       </div>
-    )) : <p>No videos uploaded</p>}
+    )) : <p>ვიდეობის არე ცარიელია</p>}
   </div>
 ))}
 
