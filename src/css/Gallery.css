@@ -21,7 +21,7 @@
 }
 
 .images {
-  background: url(../assets/soccer-player-action-stadium.jpg)
+  background: url(/soccer-player-action-stadium.webp)
     rgba(0, 0, 0, 0.4); 
   background-blend-mode: darken; 
   color: white;

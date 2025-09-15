@@ -7,7 +7,7 @@ body {
 
 .about-heading {
  background: 
-    url(../assets/michal-balog-MRgJfWsmjnM-unsplash.jpg) center/cover no-repeat,
+    url(/aboutMe.webp) center/cover no-repeat,
     rgba(0, 0, 0, 0.2); /* dark overlay */
   background-blend-mode: darken; /* blends overlay with image */
   color: white;

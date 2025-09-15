@@ -2,7 +2,7 @@
 .news-heading {
   height: 80vh;
   background: 
-    url(../assets/football-concept-composition.jpg) 
+    url(/football-concept-composition.webp) 
     rgba(0, 0, 0, 0.4); 
   background-blend-mode: darken; 
   color: white;

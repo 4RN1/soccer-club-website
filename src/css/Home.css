@@ -13,7 +13,7 @@ html, body {
   height: 100vh;
   height: 100dvh;
   background: 
-    url(../assets/landing.jpg) center/cover no-repeat,
+    url(/landing.webp) center/cover no-repeat,
     rgba(0, 0, 0, 0.4); /* dark overlay */
   background-blend-mode: darken; /* blends overlay with image */
   color: white;

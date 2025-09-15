@@ -14,7 +14,7 @@
 
 .schedule-heading  {
 
-background: url(../assets/schedule.jpg)center/cover no-repeat,
+background: url(/schedule.webp)center/cover no-repeat,
     rgba(0, 0, 0, 0.4); /* dark overlay */
   background-blend-mode: darken; /* blends overlay with image */
   color: white;

@@ -5,7 +5,7 @@
   max-width: 800px; /* optional, max width */
   margin:0 auto; /* center the form */
   border-radius: 5rem;
-  background: url(../assets/vecteezy_soccer-pattern-icons_.jpg);
+  background: url(/vecteezy_soccer-pattern-icons_.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,14 +20,14 @@
 }
 
 .registration {
-  background: url(../assets/vecteezy_soccer-pattern-icons_.jpg);
+  background: url(/vecteezy_soccer-pattern-icons_.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .reg-heading {
-  background: url(../assets/football-trainer-teaching-his-pupils.jpg)center/cover no-repeat,
+  background: url(/football-trainer-teaching-his-pupils.webp)center/cover no-repeat,
     rgba(0, 0, 0, 0.3); 
   background-blend-mode: darken; 
   color: white;
