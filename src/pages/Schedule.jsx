@@ -28,7 +28,7 @@ function Schedule() {
   return <div>
     <Navbar/>
     <div className="schedule">
-      <div className="schedule-heading"data-aos="fade-up" data-aos-delay="100" >
+      <div className="schedule-heading" >
        <h1 data-aos="fade-up" data-aos-delay="200">ცხრილი</h1>
       </div>
 <div className="scedule-side">

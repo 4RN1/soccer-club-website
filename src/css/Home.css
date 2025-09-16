@@ -221,6 +221,12 @@ margin-bottom: 2rem;
 
 /* Mobile (401px - 699px) */
 @media screen and (min-width: 401px) and (max-width: 699px) {
+  .landing-page {
+    height: auto; /* grow naturally instead of fixed 100%/100vh */
+    min-height: 125vh; /* ensures it still fills most of viewport */
+    background-size: cover;
+  }
+  
   .landing-page h1 {
     font-size: 4rem;
     padding: 1rem 1.2rem;
@@ -239,7 +245,10 @@ margin-bottom: 2rem;
     margin-top: 3rem;
   }
 
-  
+  .to-registration {
+    margin-top: 13rem;
+    
+  }
 
   
   
@@ -249,20 +258,35 @@ margin-bottom: 2rem;
 @media screen and (max-width: 400px) {
   .landing-page {
     height: auto; /* grow naturally instead of fixed 100%/100vh */
-    min-height: 100vh; /* ensures it still fills most of viewport */
+    min-height: 133vh; /* ensures it still fills most of viewport */
     background-size: cover;
   }
   .heading {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   .landing-page h1 {
     font-size: 3.5rem;
     padding: 0.8rem 1rem;
   }
-  .subtext-background {
+  .subtext-background ul{
     font-size: 1.4rem;
-    padding: 1.5rem 1rem;
+    padding: 0.5rem 0.5rem;
   }
+
+  .subtext-background {
+    padding: 1rem;
+  width: 100%;
+    max-width: 36.5rem;
+    
+  }
+
+   .to-registration {
+    margin-top: 5rem;
+    padding: 3rem;
+    
+  }
+
+
   .wrapper.show {
     margin: 0;
   }

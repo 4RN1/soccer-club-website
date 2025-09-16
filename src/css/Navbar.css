@@ -19,17 +19,11 @@ html {
   justify-content: center;
   list-style: none;
   gap: 3rem;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 2s ease, transform 2s ease;
-  margin: 0;
-  padding: 0;
+  
+
 }
 
-.navbar.show ul {
-  opacity: 1;
-  transform: translateY(0);
-}
+
 
 .navbar li {
   display: flex;
