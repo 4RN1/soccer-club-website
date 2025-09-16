@@ -10,7 +10,18 @@ function Navbar() {
     
 
       <div className={`navbar ${show ? "show" : ""}`}>
-           <Link to={'/'}><img src="/logo.png" alt="logo" className='logo' /></Link>
+        {/* logo + button */}
+        <div className='upper-nav'>
+           <Link to={'/'}><img src="/logo.png" alt="logo" className='logo'/></Link>
+            <button
+          className='toggle-menu'
+          onClick={() => setShow(!show)}
+        >
+          {show ? '✖' : "☰"}
+        </button>
+           </div>
+            {/* LInkebi */}
+           <div className='nav-links-wrap'>
         <ul className={`nav-links ${show ? 'active' : ""}`}>
          
           <li><Link to="/">მთავარი</Link></li>
@@ -20,12 +31,8 @@ function Navbar() {
           <li><Link to="/gallery">გალერეა</Link></li>
           <li><Link to="/registration">რეგისტრაცია</Link></li>
         </ul>
-        <button
-          className='toggle-menu'
-          onClick={() => setShow(!show)}
-        >
-          {show ? '✖' : "☰"}
-        </button>
+       </div>
+
       </div>
     </div>
   )

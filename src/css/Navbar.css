@@ -11,7 +11,7 @@ html {
 .navbar {
   font-family: "Noto Sans Georgian", sans-serif;
   width: 100%;
-  max-width: 120rem;
+  width: 150rem;
   font-size: 2.2rem;
   color: #ffffff;
   display: flex;
@@ -19,14 +19,16 @@ html {
   justify-content: space-around;
   height: 8rem;
   transition: height 0.3s ease; /* for smooth height changes on mobile */
-
+ 
+  
 }
+
 
 /* Logo */
 .logo {
   width: 8rem;
   cursor: pointer;
-  margin-left: 0.2rem;
+  
 }
 
 /* Nav Links */
@@ -35,6 +37,7 @@ html {
   gap: 3rem;
   justify-content: center;
   display: flex; /* visible by default for desktop */
+  margin-right: 20rem;
 }
 
 /* Nav Items */
@@ -106,6 +109,19 @@ html {
     padding-bottom: 2rem;
    
   }
+
+  .navbar {
+     flex-direction: column;
+  }
+
+  .upper-nav {
+  display: flex;
+  align-items: center;
+flex-direction: row;
+justify-content: space-around;
+width: 100%;
+max-width: 150rem;
+}
 
   .nav-links {
     display: none; /* hide by default */
