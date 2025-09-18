@@ -85,4 +85,4 @@ Copyright (c) 2025
 
 This project and its source code are the exclusive property of **Anri Begeladze (4RN1)**.  
 No permission is granted to use, copy, modify, or distribute this project in any form.  
-See the [LICENSE](./LICENSE) file for details.  
+See the [LICENSE](./LICENCE.md) file for details.  
