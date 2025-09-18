@@ -21,7 +21,7 @@ It provides a central hub for **news updates, photo galleries, and video highlig
 - **Frontend:** [React](https://react.dev/) + CSS  
 - **CMS:** [Sanity.io](https://www.sanity.io/)  
 - **Schemas:** TypeScript  
-- **Deployment:** (https://soccer-club-website-norcq6kuq-4rn1s-projects.vercel.app)  
+- **Deployment:** (https://soccer-club-website-bpxmmbrei-4rn1s-projects.vercel.app)  
 
 ---
 
