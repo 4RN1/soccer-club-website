@@ -21,7 +21,7 @@ It provides a central hub for **news updates, photo galleries, and video highlig
 - **Frontend:** [React](https://react.dev/) + CSS  
 - **CMS:** [Sanity.io](https://www.sanity.io/)  
 - **Schemas:** TypeScript  
-- **Deployment:** (https://soccer-club-website-norcq6kuq-4rn1s-projects.vercel.app)  
+- **Deployment:** (https://soccer-club-website-bpxmmbrei-4rn1s-projects.vercel.app)  
 
 ---
 
@@ -85,4 +85,4 @@ Copyright (c) 2025
 
 This project and its source code are the exclusive property of **Anri Begeladze (4RN1)**.  
 No permission is granted to use, copy, modify, or distribute this project in any form.  
-See the [LICENSE](./LICENSE) file for details.  
+See the [LICENSE](./LICENCE.md) file for details.  
